@@ -1,0 +1,86 @@
+#define RPI 175
+#define RPI_LONG 300
+
+// ZMK_COMBO(momen_num, &mo NUM, LH1 LH2, 0, 25, RPI)
+ZMK_COMBO(num_word, &num_word NUM, LM4 LM1, 0, 25, RPI_LONG)
+ZMK_COMBO(caps_word, &caps_word, LM1 RM1, 0, 50, RPI_LONG)
+ZMK_COMBO(grave, &mt TILDE GRAVE, LT2 LT3, 0, 25, RPI_LONG)
+
+// Center columns rotated on to home row
+ZMK_COMBO(minus, &mt UNDER MINUS, LM4 LM3, 0, 25, RPI)
+ZMK_COMBO(comma, &mt LT COMMA, LM3 LM2, 0, 25, RPI)
+ZMK_COMBO(sqt, &mt DQT SQT, LM2 LM1, 0, 25, RPI)
+ZMK_COMBO(semi, &mt COLON SEMI, RM1 RM2, 0, 25, RPI)
+ZMK_COMBO(dot, &mt GT DOT, RM2 RM3, 0, 25, RPI)
+ZMK_COMBO(slash, &mt QMARK SLASH, RM3 RM4, 0, 25, RPI)
+
+#if LAYOUT == ENGRAM || LAYOUT == ENGRAMMER
+	ZMK_COMBO(b, &kp B, RB3 RB2, 0, 25, RPI)
+	ZMK_COMBO(v, &kp V, RT2 RT3, 0, 25, RPI)
+#elif LAYOUT == NORDRASSIL
+	ZMK_COMBO(b, &kp B, RB2 RB3, 0, 25, RPI)
+	ZMK_COMBO(j, &kp J, RB1 RB4, 0, 25, RPI)
+	ZMK_COMBO(v, &kp V, RT2 RT3, 0, 25, RPI)
+	// ZMK_COMBO(j, &kp J, RM3 RM4, 0, 25, RPI)
+#endif
+
+// Numbers
+	ZMK_COMBO(equl, &mt PLUS EQUAL, RT1 RT2, 0, 25, RPI_LONG)
+	ZMK_COMBO(bslh, &mt PIPE BSLH, LT1 LT2, 0, 25, RPI_LONG)
+	ZMK_COMBO(lbkt, &mt LBRC LBKT, LH1 LH2, 0, 50, RPI)
+	ZMK_COMBO(rbkt, &mt RBRC RBKT, RH1 RH2, 0, 50, RPI)
+#if LAYOUT == ENGRAM
+	ZMK_COMBO(1, &mt PIPE N1, LB4 LM4, 0, 50, RPI)
+	ZMK_COMBO(2, &mt EQUAL N2, LM3 LT3, 0, 50, RPI)
+	ZMK_COMBO(3, &mt TILDE N3, LM2 LT2, 0, 50, RPI)
+	ZMK_COMBO(4, &mt PLUS N4, LM1 LT1, 0, 50, RPI)
+	ZMK_COMBO(5, &mt LT N5, LB1 LM1, 0, 50, RPI)
+	ZMK_COMBO(6, &mt GT N6, RB1 RM1, 0, 50, RPI)
+	ZMK_COMBO(7, &mt CARET N7, RT1 RM1, 0, 50, RPI)
+	ZMK_COMBO(8, &mt AMPS N8, RT2 RM2, 0, 50, RPI)
+	ZMK_COMBO(9, &mt PERCENT N9, RT3 RM3, 0, 50, RPI)
+	ZMK_COMBO(0, &mt STAR N0, RM4 RB4, 0, 50, RPI) 
+#else	
+	ZMK_COMBO(1, &mt EXCL N1, LB4 LM4, 0, 50, RPI)
+	ZMK_COMBO(2, &mt AT N2, LM3 LT3, 0, 50, RPI)
+	ZMK_COMBO(3, &mt HASH N3, LM2 LT2, 0, 50, RPI)
+	ZMK_COMBO(4, &mt DOLLAR N4, LM1 LT1, 0, 50, RPI)
+	ZMK_COMBO(5, &mt PERCENT N5, LB1 LM1, 0, 50, RPI)
+	ZMK_COMBO(6, &mt CARET N6, RB1 RM1, 0, 50, RPI)
+	ZMK_COMBO(7, &mt AMPS N7, RT1 RM1, 0, 50, RPI)
+	ZMK_COMBO(8, &mt STAR N8, RT2 RM2, 0, 50, RPI)
+	ZMK_COMBO(9, &mt LPAR N9, RT3 RM3, 0, 50, RPI)
+	ZMK_COMBO(0, &mt RPAR N0, RM4 RB4, 0, 50, RPI) 
+#endif
+
+// // Section Symbol
+// #if LAYOUT == QWERTY || LAYOUT == QWERTY_FLIP
+// 	ZMK_COMBO(sect, &kp LA(6), LM0 LB0, ALL, 50, RPI)
+// #endif
+
+// Function Keys
+ZMK_COMBO(f11, &kp F11, LM4 LB4, FUN, 50, RPI)
+
+// Keypad
+ZMK_COMBO(kp_enter, &kp KP_ENTER, LM4 LB4, NUM, 50, RPI)
+
+// Clipboard
+// ZMK_COMBO(redo, &kp LS(LG(Z)), LB5 LM5, ALL, 50, RPI)
+// ZMK_COMBO(undo, &kp LG(Z), LB3 LM3, ALL, 50, RPI)
+// ZMK_COMBO(cut, &kp LG(X), LB4 LB3, ALL, 50, RPI)
+// ZMK_COMBO(copy, &kp LG(C), LB2 LB3, ALL, 50, RPI) 
+// ZMK_COMBO(paste, &kp LG(V), LB1 LB2, ALL, 50, RPI)
+
+// Navigation
+// ZMK_COMBO(left, &mt HOME LEFT, RB1 RB2, 0 NUM, 50, RPI)
+// ZMK_COMBO(down, &mt PG_DN DOWN, RB2 RM2, 0 NUM, 50, RPI)
+// ZMK_COMBO(up, &mt PG_UP UP, RB3 RM3, 0 NUM, 50, RPI) 
+// ZMK_COMBO(right, &mt END RIGHT, RB3 RB4, 0 NUM, 50, RPI)
+
+ZMK_COMBO(tab, &kp TAB, LB2 LB3, 0, 50, RPI)
+ZMK_COMBO(esc, &kp ESC, LB1 LB4, 0, 50, RPI) 
+
+// Bluetooth
+ZMK_COMBO(bl_clear, &bt BT_CLR, RB1 RM1, FUN, 50, RPI)
+ZMK_COMBO(bl_next, &studio_unlock, RB2 RM2, FUN, 50, RPI)
+ZMK_COMBO(out_tog, &out OUT_TOG, RB3 RM3, FUN, 50, RPI)

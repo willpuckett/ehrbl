@@ -1,0 +1,72 @@
+/*
+* Copyright (c) 2020 The ZMK Contributors
+*
+* SPDX-License-Identifier: MIT
+*/
+
+#ifndef LAYOUT
+	#define LAYOUT 1
+#endif
+
+#define QWERTY 0
+#define ENGRAM 1
+#define ENGRAMMER 2
+#define NORDRASSIL 3
+
+#define NUM 1
+#define FUN 2
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include "26.h"
+#include "zmk-helpers/helper.h"
+#include <behaviors/num_word.dtsi>
+#include "taps.dtsi"
+#include "combos.dtsi"
+#include "magic.dtsi"
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+		
+    #if LAYOUT == ENGRAM || LAYOUT == ENGRAMMER
+		engram_layer {
+			bindings = <
+						 &rpi Q Y     &kp O         &kp U     	      &kp L      	&mqt FUN D    	&rpi Z G  
+			&hl LCTRL C  &hl LALT I   &hl LGUI E    &hls LSHFT A      &hrs RSHFT H  &hr RGUI T 	    &hr RALT S &hr RCTRL N
+			&rpi LG(Z) W &rpi LG(X) X &rpi LG(C) J  &rpi LG(V) K      &rpi LEFT R   &rpi DOWN M    	&rpi UP F  &rpi RIGHT P
+									  &kp BSPC      &rpi RETURN SPACE &kp RETURN 	&num_word NUM
+			>;
+		};
+	#elif LAYOUT == NORDRASSIL
+		nordrassil_layer {
+			bindings = <
+						 &kp Y    	    &kp O     	     &kp U       	    &kp G        &mqt FUN N  &kp W      	
+			&hl LCTRL H  &hl LALT I 	&hl LGUI E  	 &hls LSHFT A       &hrs RSHFT D &hr RGUI R  &hr RALT S &hr RCTRL L
+			&rpi LG(Z) K &rpi LG(X) Q 	&rpi LG(C) Z     &rpi LG(V) X       &rpi LEFT C  &rpi DOWN M &rpi UP F  &rpi RIGHT P
+										&kp BSPC   		 &rpi RETURN SPACE  &mqt NUM T   &magic
+			>;
+		};
+    #endif
+		
+		num_layer {
+			bindings = <
+						  				&rpi KP_N7 N7 &rpi KP_N8 N8  	&rpi KP_N9 N9 &kp C_VOL_DN		 &kp C_MUTE 	&kp C_VOL_UP   	
+			&rpi KP_DIVIDE KP_MULTIPLY 	&rpi KP_N4 N4 &rpi KP_N5 N5 	&rpi KP_N6 N6 &hrs LSHFT C_PREV  &hr RGUI C_PP  &hr RALT C_NEXT &kp RCTRL
+			&rpi KP_MINUS KP_PLUS 		&rpi KP_N1 N1 &rpi KP_N2 N2 	&rpi KP_N3 N3 &none  		  	 &none  		 &none  	 	&none
+													  &rpi KP_DOT DOT	&rpi KP_N0 N0 &trans 			 &kp K_CANCEL
+			>;
+		};
+		
+		fun_layer {
+			bindings = <
+					 &kp F7	 &kp F8	 &kp F9    &trans 	&trans 	&trans 		
+			&kp F12  &kp F4  &kp F5  &kp F6    &trans  	&trans 	&trans 	&trans
+			&kp F10	 &kp F1  &kp F2  &kp F3    &trans  	&trans	&trans 	&trans
+							 &trans  &trans    &trans   &trans
+			>;
+		};
+	};
+};

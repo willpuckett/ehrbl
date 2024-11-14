@@ -1,0 +1,44 @@
+include:
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DDTS_EXTRA_CPPFLAGS=-DLAYOUT=1
+    artifact-name: ehrbl_engram_left
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_right
+    cmake-args: -DDTS_EXTRA_CPPFLAGS=-DLAYOUT=1
+    artifact-name: ehrbl_engram_right
+
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DDTS_EXTRA_CPPFLAGS=-DLAYOUT=2
+    artifact-name: ehrbl_engrammer_left
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_right
+    cmake-args: -DDTS_EXTRA_CPPFLAGS=-DLAYOUT=2
+    artifact-name: ehrbl_engrammer_right
+
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DDTS_EXTRA_CPPFLAGS=-DLAYOUT=3
+    artifact-name: ehrbl_nordrassil_left
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_right
+    cmake-args: -DDTS_EXTRA_CPPFLAGS=-DLAYOUT=3
+    artifact-name: ehrbl_nordrassil_right
+
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DLAYOUT=3;-DDIRECT"
+    artifact-name: ehrbl_nordrassil_left_direct
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_right
+    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DLAYOUT=3;-DDIRECT"
+    artifact-name: ehrbl_nordrassil_right_direct
+
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: settings_reset

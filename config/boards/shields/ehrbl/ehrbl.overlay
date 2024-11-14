@@ -1,0 +1,5 @@
+#include "ehrbl.dtsi"
+
+&uicr {
+	nfct-pins-as-gpios;
+};
