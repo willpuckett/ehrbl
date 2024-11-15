@@ -1,6 +1,6 @@
 #define HM_TAPPING_TERM 280
 #define HM_TAPPING_TERM_FAST 200
-#define HM_TAPPING_TERM_QT 175
+#define HM_RPI 175
 
 #define KEYS_L LT3 LT2 LT1 LM4 LM3 LM2 LM1 LB4 LB3 LB2 LB1 // left-hand keys
 #define KEYS_R RT1 RT2 RT3 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RB4 // right-hand keys
@@ -13,7 +13,7 @@
 			#binding-cells = <2>;
 			flavor = "balanced";
 			tapping-term-ms = <HM_TAPPING_TERM>;
-			require-prior-idle-ms = <HM_TAPPING_TERM_QT>;
+			require-prior-idle-ms = <HM_RPI>;
 			hold-trigger-key-positions = < KEYS_R THUMBS >;
 			hold-trigger-on-release;
 			bindings = <&kp>, <&kp>;
@@ -24,7 +24,7 @@
 			#binding-cells = <2>;
 			flavor = "balanced";
 			tapping-term-ms = <HM_TAPPING_TERM>;
-			require-prior-idle-ms = <HM_TAPPING_TERM_QT>;
+			require-prior-idle-ms = <HM_RPI>;
 			hold-trigger-key-positions = < KEYS_L THUMBS >;
 			hold-trigger-on-release;
 			bindings = <&kp>, <&kp>;
@@ -54,7 +54,7 @@
 			flavor = "tap-preferred";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <125>;
-			require-prior-idle-ms = <HM_TAPPING_TERM_QT>;
+			require-prior-idle-ms = <HM_RPI>;
 			bindings = <&mo>, <&kp>;
 		};
 		
@@ -64,7 +64,7 @@
 			flavor = "tap-preferred";
 			tapping-term-ms = <175>;
 			quick-tap-ms = <200>;	
-			require-prior-idle-ms = <HM_TAPPING_TERM_QT>;
+			require-prior-idle-ms = <HM_RPI>;
 			bindings = <&kp>, <&kp>;
 		};
 

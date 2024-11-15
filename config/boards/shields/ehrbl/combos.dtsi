@@ -1,3 +1,4 @@
+#define RPI_SHORT 100
 #define RPI 175
 #define RPI_LONG 300
 
@@ -15,13 +16,12 @@ ZMK_COMBO(dot, &mt GT DOT, RM2 RM3, 0, 25, RPI)
 ZMK_COMBO(slash, &mt QMARK SLASH, RM3 RM4, 0, 25, RPI)
 
 #if LAYOUT == ENGRAM || LAYOUT == ENGRAMMER
-	ZMK_COMBO(b, &kp B, RB3 RB2, 0, 25, RPI)
-	ZMK_COMBO(v, &kp V, RT2 RT3, 0, 25, RPI)
+	ZMK_COMBO(b, &kp B, RB3 RB2, 0, 25, RPI_SHORT)
+	ZMK_COMBO(v, &kp V, RT2 RT3, 0, 25, RPI_SHORT)
 #elif LAYOUT == NORDRASSIL
-	ZMK_COMBO(b, &kp B, RB2 RB3, 0, 25, RPI)
-	ZMK_COMBO(j, &kp J, RB1 RB4, 0, 25, RPI)
-	ZMK_COMBO(v, &kp V, RT2 RT3, 0, 25, RPI)
-	// ZMK_COMBO(j, &kp J, RM3 RM4, 0, 25, RPI)
+	ZMK_COMBO(b, &kp B, RB2 RB3, 0, 25, RPI_SHORT)
+	ZMK_COMBO(j, &kp J, RB1 RB4, 0, 25, RPI_SHORT)
+	ZMK_COMBO(v, &kp V, RT2 RT3, 0, 25, RPI_SHORT)
 #endif
 
 // Numbers
@@ -58,9 +58,6 @@ ZMK_COMBO(slash, &mt QMARK SLASH, RM3 RM4, 0, 25, RPI)
 // 	ZMK_COMBO(sect, &kp LA(6), LM0 LB0, ALL, 50, RPI)
 // #endif
 
-// Function Keys
-ZMK_COMBO(f11, &kp F11, LM4 LB4, FUN, 50, RPI)
-
 // Keypad
 ZMK_COMBO(kp_enter, &kp KP_ENTER, LM4 LB4, NUM, 50, RPI)
 
@@ -77,8 +74,8 @@ ZMK_COMBO(kp_enter, &kp KP_ENTER, LM4 LB4, NUM, 50, RPI)
 // ZMK_COMBO(up, &mt PG_UP UP, RB3 RM3, 0 NUM, 50, RPI) 
 // ZMK_COMBO(right, &mt END RIGHT, RB3 RB4, 0 NUM, 50, RPI)
 
-ZMK_COMBO(tab, &kp TAB, LB2 LB3, 0, 50, RPI)
-ZMK_COMBO(esc, &kp ESC, LB1 LB4, 0, 50, RPI) 
+ZMK_COMBO(tab, &kp TAB, LB2 LB3, 0, 50, RPI_SHORT)
+ZMK_COMBO(esc, &kp ESC, LB1 LB4, 0, 50, RPI_SHORT) 
 
 // Bluetooth
 ZMK_COMBO(bl_clear, &bt BT_CLR, RB1 RM1, FUN, 50, RPI)

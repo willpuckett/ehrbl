@@ -1,5 +1,21 @@
 #!/usr/bin/env bash
 
+pristine=false
+
+while getopts ":p" opt; do
+    case ${opt} in
+        p )
+            pristine=true
+            ;;
+        \? )
+            echo "Usage: $0 [options]"
+            echo "Options:"
+            echo "  -p  pristine build (defaults to incremental)"
+            exit 1
+            ;;
+    esac
+done
+
 home=$(echo ~)
 project=$(pwd)
 out="$project/out"
@@ -14,7 +30,8 @@ cd ~/Public/zmk/app
 declare -A jobs
 
 for i in $(seq 0 $((--length))); do 
-    build=(west build -p)
+    build=(west build)
+    [[ $pristine == true ]] && build+=(-p)
     job=$(jq -r .[$i] <<< $json )
 
     artifact=$(jq -r .\"artifact-name\" <<< $job )
