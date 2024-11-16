@@ -31,7 +31,7 @@ declare -A jobs
 
 for i in $(seq 0 $((--length))); do 
     build=(west build)
-    [[ $pristine == true ]] && build+=(-p)
+    [[ $pristine == true ]] && echo pristine && build+=(-p)
     job=$(jq -r .[$i] <<< $json )
 
     artifact=$(jq -r .\"artifact-name\" <<< $job )

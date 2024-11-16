@@ -1,63 +1,23 @@
-ZMK_MACRO(he, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp H &kp E>;)
-ZMK_MACRO(an, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp A &kp N>;)
-ZMK_MACRO(nd, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp N &kp D>;)
-ZMK_MACRO(ng, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp N &kp G>;)
-ZMK_MACRO(er, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp E &kp R>;)
-ZMK_MACRO(nt, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp N &kp T>;)
-ZMK_MACRO(as, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp A &kp S>;)
-ZMK_MACRO(ou, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp O &kp U>;)
-ZMK_MACRO(er, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp E &kp R>;)
-ZMK_MACRO(ere, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp E &kp R &kp E>;)
-ZMK_MACRO(uld, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp U &kp L &kp D>;)
-ZMK_MACRO(ent, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp E &kp N &kp T>;)
-ZMK_MACRO(rom, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp R &kp O &kp M>;)
-ZMK_MACRO(the, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp LS(T) &kp H &kp E>;)
-ZMK_MACRO(but, 
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings= <&kp SPACE &kp B &kp U &kp T>;)
+ZMK_MACRO(he, wait-ms = <30>; tap-ms = <40>; bindings= <&kp H &kp E>;)
+ZMK_MACRO(an, wait-ms = <30>; tap-ms = <40>; bindings= <&kp A &kp N>;)
+ZMK_MACRO(nd, wait-ms = <30>; tap-ms = <40>; bindings= <&kp N &kp D>;)
+ZMK_MACRO(ng, wait-ms = <30>; tap-ms = <40>; bindings= <&kp N &kp G>;)
+ZMK_MACRO(er, wait-ms = <30>; tap-ms = <40>; bindings= <&kp E &kp R>;)
+ZMK_MACRO(nt, wait-ms = <30>; tap-ms = <40>; bindings= <&kp N &kp T>;)
+ZMK_MACRO(as, wait-ms = <30>; tap-ms = <40>; bindings= <&kp A &kp S>;)
+ZMK_MACRO(ou, wait-ms = <30>; tap-ms = <40>; bindings= <&kp O &kp U>;)
+ZMK_MACRO(er, wait-ms = <30>; tap-ms = <40>; bindings= <&kp E &kp R>;)
+ZMK_MACRO(ere, wait-ms = <30>; tap-ms = <40>; bindings= <&kp E &kp R &kp E>;)
+ZMK_MACRO(uld, wait-ms = <30>; tap-ms = <40>; bindings= <&kp U &kp L &kp D>;)
+ZMK_MACRO(ent, wait-ms = <30>; tap-ms = <40>; bindings= <&kp E &kp N &kp T>;)
+ZMK_MACRO(rom, wait-ms = <30>; tap-ms = <40>; bindings= <&kp R &kp O &kp M>;)
+ZMK_MACRO(the, wait-ms = <30>; tap-ms = <40>; bindings= <&kp LS(T) &kp H &kp E>;)
+ZMK_MACRO(but, wait-ms = <30>; tap-ms = <40>; bindings= <&kp SPACE &kp B &kp U &kp T>;)
+ZMK_MACRO(github, wait-ms = <30>; tap-ms = <40>; bindings= <&kp I &kp T &kp H &kp U &kp B>;)
+ZMK_MACRO(ght, wait-ms = <30>; tap-ms = <40>; bindings= <&kp G &kp H &kp T>;)
+ZMK_MACRO(le, wait-ms = <30>; tap-ms = <40>; bindings= <&kp L &kp E>;)
+
+
 
 / {
     behaviors {
@@ -66,10 +26,9 @@ ZMK_MACRO(but,
             label = "ADAPTIVE_MAGIC";
             #binding-cells = <0>;
             defaults = <&kp RETURN>;
-            bindings = <&he>, <&an>, <&kp O>, <&nd>, <&ng>, <&er>, <&nt>, <&as>, <&ou>, <&er>, <&ere>, <&uld>, <&ent>, <&rom>, <&the>, <&but>;
-            antecedents = <T C Z A I H E W Y V H O M F DOT COMMA>;
+            bindings = <&he>, <&an>, <&kp O>, <&nd>, <&ng>, <&er>, <&nt>, <&as>, <&ou>, <&er>, <&ere>, <&uld>, <&ent>, <&rom>, <&the>, <&but>, <&github>, <&ght>, <&le>;
+            antecedents = <T C Z A I H E W Y V H O M F DOT COMMA G U B>;
             max-delay-ms = <250>;
         };
     };
 };
-
