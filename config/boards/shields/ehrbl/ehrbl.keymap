@@ -41,16 +41,22 @@
 			>;
 		};
 	#elif LAYOUT == NORDRASSIL
+		// kqbv seems to be the most comfortable thus far
+		// bqkv is also ok and weights by frequency, but irritates my pinky a little more
+		// b 53
+		// v 38
+		// k 19
+		// q 4
 		nordrassil_layer {
 			bindings = <
-						 &kp Y    	    &kp O     	     &kp U       	    &kp G        &mqt FUN N  &kp W      	
+						 &kp Y    		&kp O     	     &kp U       	    &kp G     	 &mqt FUN N  &kp W      	
 			&hl LCTRL H  &hl LALT I 	&hl LGUI E  	 &hls LSHFT A       &hrs RSHFT D &hr RGUI R  &hr RALT S &hr RCTRL L
-			&rpi LG(Z) K &rpi LG(X) Q 	&rpi LG(C) Z     &rpi LG(V) X       &rpi LEFT C  &rpi DOWN M &rpi UP F  &rpi RIGHT P
+			&rpi LG(Z) K &rpi LG(X) Q 	&rpi LG(C) B     &rpi LG(V) V       &rpi LEFT C  &rpi DOWN M &rpi UP F  &rpi RIGHT P
 										&kp BSPC   		 &rpi RETURN SPACE  &mqt NUM T   &magic
 			>;
 		};
     #endif
-		
+	
 		num_layer {
 			bindings = <
 						  				&rpi KP_N7 N7 &rpi KP_N8 N8  	&rpi KP_N9 N9 &kp C_VOL_DN		 &kp C_MUTE 	&kp C_VOL_UP   	

@@ -17,8 +17,6 @@ ZMK_MACRO(github, wait-ms = <30>; tap-ms = <40>; bindings= <&kp I &kp T &kp H &k
 ZMK_MACRO(ght, wait-ms = <30>; tap-ms = <40>; bindings= <&kp G &kp H &kp T>;)
 ZMK_MACRO(le, wait-ms = <30>; tap-ms = <40>; bindings= <&kp L &kp E>;)
 
-
-
 / {
     behaviors {
         magic: adaptive_magic {
@@ -26,9 +24,10 @@ ZMK_MACRO(le, wait-ms = <30>; tap-ms = <40>; bindings= <&kp L &kp E>;)
             label = "ADAPTIVE_MAGIC";
             #binding-cells = <0>;
             defaults = <&kp RETURN>;
-            bindings = <&he>, <&an>, <&kp O>, <&nd>, <&ng>, <&er>, <&nt>, <&as>, <&ou>, <&er>, <&ere>, <&uld>, <&ent>, <&rom>, <&the>, <&but>, <&github>, <&ght>, <&le>;
-            antecedents = <T C Z A I H E W Y V H O M F DOT COMMA G U B>;
-            max-delay-ms = <250>;
+            bindings = <&he>, <&an>, <&kp O>, <&nd>, <&ng>, <&er>, <&nt>, <&as>, <&ou>, <&kp E>, <&uld>, <&ent>, <&rom>, <&the>, <&but>, <&github>, <&ght>, <&kp Y>, <&kp O>, <&kp E>;
+            antecedents = <T C Z A I H E W Y V O M F DOT COMMA G U B J K>;
+            max-delay-ms = <300>;
         };
     };
 };
+// bqjv
