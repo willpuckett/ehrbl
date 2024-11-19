@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROJECT=ehrbl
-LAYOUTS=('engram' 'engrammer' 'nordrassil')
+LAYOUTS=('caster')
 COLS=8
 ZMK_KEYMAP="config/boards/shields/${PROJECT}/${PROJECT}.keymap"
 # See [this link](https://github.com/caksoylar/keymap-drawer/blob/main/KEYMAP_SPEC.md#colsthumbs-notation-specification)
@@ -26,7 +26,7 @@ for i in "${!LAYOUTS[@]}"; do
     BASE=".images/keymap_${LAYOUTS[$i]}"
     YML="$BASE.yml"
     # note you have to have the quotes for KMD_LAYOUT expansion
-    KEYMAP_zmk_preamble="#define LAYOUT $(( i + 1))" keymap parse -c $COLS -z "$ZMK_KEYMAP" > "$YML" &&
+    KEYMAP_zmk_preamble="#define LAYOUT $i" keymap parse -c $COLS -z "$ZMK_KEYMAP" > "$YML" &&
         keymap draw "${KMD_LAYOUT[@]}" "$YML" > "$BASE.svg"
     [[ $? -ne 0 ]] && exit 1
     rm "$YML"
