@@ -23,9 +23,9 @@
 		compatible = "zmk,keymap";
 		caster_layer {
 			bindings = <
-						 &kp F     		&kp D     	 &kp L       		&kp Y     	 &kp O  	 &kp U      	
+						 &kp Y     		&kp D     	     &kp L       		&kp F     	 &kp O  	 &kp U      	
 			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A  &hr RALT I &hr RCTRL H
-			&kp B		 &kp W 			&kp G     		 &kp M      		&kp P  		 &kp COMMA   &kp DOT    &kp V
+			&kp B		 &kp W 			&kp G     		 &kp M      		&kp P  		 &kp K       &kp J      &kp V
 										&mqt FUN BSPC    &mqt NUM SPACE     &kp E        &kp RET   
 			>;
 		};

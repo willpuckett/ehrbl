@@ -9,22 +9,23 @@ ZMK_COMBO(grave, &mt TILDE GRAVE, LT2 LT3, 0, 25, RPI_LONG)
 ZMK_COMBO(esc, &kp ESC, LT3 LT2 LT1, 0 NUM, 25, RPI_LONG)
 
 // Center columns rotated on to home row
+ZMK_COMBO(tab, &kp TAB, LM4 LM3, 0 NUM, 25, RPI)
+ZMK_COMBO(dot, &mt GT DOT, LM2 LM3, 0, 25, RPI)
 ZMK_COMBO(minus, &mt UNDER MINUS, LM1 LM2, 0, 25, RPI)
-// ZMK_COMBO(comma, &mt LT COMMA, RM3 RM2, 0, 25, RPI)
-ZMK_COMBO(sqt, &mt DQT SQT, LM3 LM4, 0, 25, RPI)
-ZMK_COMBO(semi, &mt COLON SEMI, RM3 RM4, 0, 25, RPI)
-ZMK_COMBO(tab, &kp TAB, LM2 LM3, 0 NUM, 25, RPI)
+ZMK_COMBO(sqt, &mt DQT SQT, LT1 LT2, 0, 25, RPI)
 ZMK_COMBO(slash, &mt QMARK SLASH, RM1 RM2, 0, 25, RPI)
+ZMK_COMBO(comma, &mt LT COMMA, RM3 RM2, 0, 25, RPI)
+ZMK_COMBO(semi, &mt COLON SEMI, RM3 RM4, 0, 25, RPI)
 // Letters
-ZMK_COMBO(x, &kp X, LT3 LM3, 0, 50, RPI)
-ZMK_COMBO(z, &kp Z, LT2 LM2, 0, 50, RPI)
-ZMK_COMBO(k, &kp K, LT1 LM1, 0, 50, RPI)
-ZMK_COMBO(j, &kp J, RM1 RT1, 0, 50, RPI)
+ZMK_COMBO(x, &kp X, LB1 LB4, 0, 50, RPI)
+ZMK_COMBO(z, &kp Z, RB1 RB4, 0, 50, RPI)
+// ZMK_COMBO(k, &kp K, LT1 LM1, 0, 50, RPI)
+// ZMK_COMBO(j, &kp J, RM1 RT1, 0, 50, RPI)
 ZMK_COMBO(q, &kp Q, LB2 LB3, 0, 50, RPI)
 
 // Numbers
-ZMK_COMBO(equl, &mt PLUS EQUAL, LT1 LT2, 0, 25, RPI_LONG)
-ZMK_COMBO(bslh, &mt PIPE BSLH, RT1 RT2, 0, 25, RPI_LONG)
+ZMK_COMBO(equl, &mt PLUS EQUAL, LT1 LT3, 0, 25, RPI_LONG)
+ZMK_COMBO(bslh, &mt PIPE BSLH, RT1 RT3, 0, 25, RPI_LONG)
 ZMK_COMBO(lbkt, &mt LBRC LBKT, RT2 RT3, 0, 50, RPI_LONG)
 ZMK_COMBO(rbkt, &mt RBRC RBKT, RB2 RB3, 0, 50, RPI_LONG)
 
