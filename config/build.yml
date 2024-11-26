@@ -2,10 +2,10 @@ include:
   - board: seeeduino_xiao_ble
     shield: ehrbl_left
     snippet: studio-rpc-usb-uart
-    artifact-name: ehrbl_caster_left_direct
+    artifact-name: ehrbl_caster_left
   - board: seeeduino_xiao_ble
     shield: ehrbl_right
-    artifact-name: ehrbl_caster_right_direct
+    artifact-name: ehrbl_caster_right
 
   - board: seeeduino_xiao_ble
     shield: ehrbl_left
