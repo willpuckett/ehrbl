@@ -410,7 +410,7 @@
 		(start -10.4775 -6.985)
 		(end -10.4775 6.985)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -420,7 +420,7 @@
 		(start -8.5725 -8.89)
 		(end 8.5725 -8.89)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -430,7 +430,7 @@
 		(start -8.5725 8.89)
 		(end 8.5725 8.89)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -440,7 +440,7 @@
 		(start 10.4775 6.985)
 		(end 10.4775 -6.985)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -451,7 +451,7 @@
 		(mid -9.919538 -8.332038)
 		(end -8.5725 -8.89)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -462,7 +462,7 @@
 		(mid -9.919538 8.332038)
 		(end -10.4775 6.985)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -473,7 +473,7 @@
 		(mid 9.919538 -8.332038)
 		(end 10.4775 -6.985)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")
@@ -484,7 +484,7 @@
 		(mid 9.919538 8.332038)
 		(end 8.5725 8.89)
 		(stroke
-			(width 0.00254)
+			(width 0.1)
 			(type solid)
 		)
 		(layer "User.2")

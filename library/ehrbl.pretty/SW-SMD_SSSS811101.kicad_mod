@@ -230,14 +230,14 @@
 		(at -1.5 0.45)
 		(size 0.9 0.9)
 		(drill 0.9)
-		(layers "F&B.Cu")
+		(layers "*.Cu")
 		(uuid "8d033db2-313d-4555-aae6-e5d177e410ba")
 	)
 	(pad "" np_thru_hole circle
 		(at 1.5 0.45)
 		(size 0.9 0.9)
 		(drill 0.9)
-		(layers "F&B.Cu")
+		(layers "*.Cu")
 		(uuid "bb91ea5d-35e9-4805-a1a2-db608f4528d2")
 	)
 	(pad "1" smd rect

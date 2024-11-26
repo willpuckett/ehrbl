@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "26.h"
+#include "28.h"
 #include "zmk-helpers/helper.h"
 #include <behaviors/num_word.dtsi>
 #include "taps.dtsi"
@@ -23,26 +23,26 @@
 		compatible = "zmk,keymap";
 		caster_layer {
 			bindings = <
-						 &kp Y     		&kp D     	     &kp L       		&kp F     	 &kp O  	 &kp U      	
-			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A  &hr RALT I &hr RCTRL H
-			&kp B		 &kp W 			&kp G     		 &kp M      		&kp P  		 &kp K       &kp J      &kp V
+			&kp B		 &kp F     		&kp D     	     &kp L       		&kp P     	 &kp O  	   &kp U  	   &kp Y  	
+			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A    &hr RALT I  &hr RCTRL H
+			&kp V		 &kp W 			&kp G     		 &kp M      		&kp K  		 &rpi LT COMMA &rpi GT DOT &rpi DQT SQT
 										&mqt FUN BSPC    &mqt NUM SPACE     &kp E        &kp RET   
 			>;
 		};
 		num_layer {
 			bindings = <
-						  	&rpi AMPS KP_N7  &rpi STAR KP_N8   	&rpi LPAR KP_N9  &kp C_VOL_DN		&kp C_MUTE 	  &kp C_VOL_UP   	
-			&rpi RPAR KP_N0 &rpi DLLR KP_N4  &rpi PRCNT KP_N5  	&rpi CARET KP_N6 &hrs LSHFT C_PREV  &hr RGUI C_PP &hr RALT C_NEXT &kp RCTRL
-			&kp DOT 		&rpi EXCL KP_N1  &rpi AT KP_N2  	&rpi HASH KP_N3  &none  		  	&none  		  &none  	 	  &none
-											 &trans 	        &trans           &trans 			&kp K_CANCEL
+			&kp KP_ENTER     &rpi AMPS KP_N7  &rpi STAR KP_N8  &rpi LPAR KP_N9  &kp C_VOL_DN		&kp C_MUTE 	  &kp C_VOL_UP    &none	
+			&rpi RPAR KP_N0  &rpi DLLR KP_N4  &rpi PRCNT KP_N5 &rpi CARET KP_N6 &hrs LSHFT C_PREV   &hr RGUI C_PP &hr RALT C_NEXT &kp RCTRL
+			&kp DOT          &rpi EXCL KP_N1  &rpi AT KP_N2    &rpi HASH KP_N3  &none  		        &none  		  &none  	 	  &none
+											  &trans 	       &trans           &trans 			    &kp K_CANCEL
 			>;
 		};
 		fun_layer {
 			bindings = <
-					 &kp F7	 &kp F8	 &kp F9    &trans 	&trans 	&trans 		
-			&kp F12  &kp F4  &kp F5  &kp F6    &trans  	&trans 	&trans 	&trans
-			&kp F11	 &kp F1  &kp F2  &kp F3    &trans  	&trans	&trans 	&trans
-							 &trans  &kp F10   &trans   &trans
+			&kp F12  &kp F7	 &kp F8	 &kp F9    &trans 	&trans 	&trans 	&trans	
+			&kp F11  &kp F4  &kp F5  &kp F6    &trans  	&trans 	&trans 	&trans
+			&kp F10	 &kp F1  &kp F2  &kp F3    &trans  	&trans	&trans 	&trans
+							 &trans  &trans    &trans   &trans
 			>;
 		};
 	};
