@@ -1,17 +1,22 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_EHRBL_LEFT
+if SHIELD_EHRBL_DONGLE || SHIELD_EHRBL_LEFT_CENTRAL
 
 config ZMK_KEYBOARD_NAME
-    default "ehrbl"
+    default "ehrbl dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+	default y
+
 endif
 
-if SHIELD_EHRBL_LEFT || SHIELD_EHRBL_RIGHT
+if SHIELD_EHRBL_LEFT_PERIPHERAL || SHIELD_EHRBL_LEFT_CENTRAL || SHIELD_EHRBL_RIGHT || SHIELD_EHRBL_DONGLE
 config ZMK_SPLIT
     default y
+config ZMK_BLE
+	default y
 endif

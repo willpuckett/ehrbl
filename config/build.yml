@@ -1,21 +1,35 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: ehrbl_left
+    shield: ehrbl_left_central
     snippet: studio-rpc-usb-uart
-    artifact-name: ehrbl_caster_left
+    artifact-name: ehrbl_caster_left_central
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_left_peripheral
+    # snippet: studio-rpc-usb-uart
+    artifact-name: ehrbl_caster_left_peripheral
   - board: seeeduino_xiao_ble
     shield: ehrbl_right
     artifact-name: ehrbl_caster_right
 
   - board: seeeduino_xiao_ble
-    shield: ehrbl_left
+    shield: ehrbl_left_central
     snippet: studio-rpc-usb-uart
     cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDIRECT"
-    artifact-name: ehrbl_caster_left_direct
+    artifact-name: ehrbl_caster_left_central_direct
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_left_peripheral
+    # snippet: studio-rpc-usb-uart
+    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDIRECT"
+    artifact-name: ehrbl_caster_left_peripheral_direct
   - board: seeeduino_xiao_ble
     shield: ehrbl_right
     cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDIRECT"
     artifact-name: ehrbl_caster_right_direct
+
+  - board: seeeduino_xiao_ble
+    shield: ehrbl_dongle
+    snippet: studio-rpc-usb-uart
+    artifact-name: ehrbl_dongle
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
