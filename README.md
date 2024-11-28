@@ -76,17 +76,16 @@ typing—no bumpons necessary.
 
 Using a variant that should probably be referred to as _Befuddle_, scoring a
 whispy 636.1 "total word effort" on
-[cyanophage](https://cyanophage.github.io/playground.html?layout=bfdl%2F%3Bpouyjcstrx-naihqvwgm%5C%3Dk%2C.%27ze&mode=ergo&lan=english);
-it's buttery-er than any other (posted) layout. The Y-punctuation cluster interaction is its greatest shortcoming, but it seems to be the least of all evils.
+[cyanophage](https://cyanophage.github.io/playground.html?layout=bfdl%2F%3Bpouyjcstrx-naihqvwgm%5C%3Dk%2C.%27ze&mode=ergo&lan=english).
+The Y-punctuation cluster interaction is its greatest shortcoming, but it seems
+to be the least of all evils.
 
 ![cyanophage stats](.images/cyanophage.png)
 
-Highly optimized for right handed CAD—Blender, KiCad, Shapr...
+Optimized for right handed CAD—Blender, KiCad, Shapr...
 
 > [!NOTE]
-> The combo-forward layouts obscure a little text in the graphics. See
-> [the keymap](/config/boards/shields/ehrbl/ehrbl.keymap) and
-> [combos](/config/boards/shields/ehrbl/combos.dtsi) for details.
+> The combo-forward layout obscures CAGS home row mods in the graphics.
 
 ![Caster](.images/keymap_caster.svg)
 

@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 2
           ref: ${{ github.head_ref }}
       - run: |
-          python3 -m pipx install git+https://github.com/caksoylar/keymap-drawer.git
+          python3 -m pipx install keymap-drawer
           .github/workflows/keymap.sh
       - uses: actions/upload-artifact@v4
         with:
