@@ -7495,7 +7495,7 @@
 		(uuid "085e7da5-b822-4e76-a9a8-fef7516d5f82")
 		(at 245 101 -10)
 		(property "Reference" "E1"
-			(at 0 -4 170)
+			(at 0.18852 -1.810238 170)
 			(layer "F.SilkS")
 			(uuid "d687e78b-bd81-485a-abc8-1ce664c44648")
 			(effects
@@ -7552,12 +7552,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22643"
+		(property "LCSC Part" ""
 			(at 0 0 -10)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "db16bf63-27bc-43e6-bdb2-8561cab4d865")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22643"
+			(at 0 0 -10)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d09cbf0c-cd89-4b3e-9d32-d838ac3efe30")
 			(effects
 				(font
 					(size 1 1)
@@ -9382,7 +9395,7 @@
 			(uuid "1537e80b-0fa8-40c7-88de-9e6e3f0cefeb")
 		)
 		(fp_text user "XIAO nRF52840"
-			(at -0.0635 -0.000001 100)
+			(at -1.23435 2.408469 100)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "5acde910-45d2-4297-9ae3-5c73911cde63")
@@ -11325,7 +11338,7 @@
 		(uuid "296ca06e-7934-466b-bafc-793fff7be1ca")
 		(at 71.5 102.25 10)
 		(property "Reference" "E4"
-			(at 0 -4 10)
+			(at 0.01427 -1.520624 10)
 			(layer "F.SilkS")
 			(uuid "2dc257a1-6b0e-49a9-984c-6a94d4c3587f")
 			(effects
@@ -11382,12 +11395,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22643"
+		(property "LCSC Part" ""
 			(at 0 0 10)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2f6f8024-89d0-420d-b318-f6741206590e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22643"
+			(at 0 0 10)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6138c9a6-5462-4451-a3fd-6470a7dac929")
 			(effects
 				(font
 					(size 1 1)
@@ -11706,7 +11732,7 @@
 		(uuid "2f670ac2-3c17-41cf-86da-19762d3b52fc")
 		(at 250.5 107 170)
 		(property "Reference" "E3"
-			(at 0 -4 170)
+			(at 0.057682 1.766826 170)
 			(layer "F.SilkS")
 			(uuid "251eed06-f8b2-4fdb-bf8c-e88723e729d9")
 			(effects
@@ -11763,12 +11789,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22643"
+		(property "LCSC Part" ""
 			(at 0 0 170)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fad05339-c6a8-4142-92db-c13c5dd51146")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22643"
+			(at 0 0 170)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c912a44b-f2c1-4294-b748-543827e5ed0d")
 			(effects
 				(font
 					(size 1 1)
@@ -11889,7 +11928,7 @@
 		(descr ".105\" LONG RECEPTACLE; ACCEPTS .")
 		(tags "millmax 3305-0 keyboard")
 		(property "Reference" "J51"
-			(at -0.762 1.016 25)
+			(at 0.906419 -2.561935 25)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "3010965d-d98a-4333-b16c-6e83d9a84dc6")
@@ -12087,7 +12126,7 @@
 		(uuid "39cec9ed-cc8e-4803-8e74-349e796cd9d0")
 		(at 87.142358 57.696452 10)
 		(property "Reference" "BT2"
-			(at 0.000001 -4 10)
+			(at -0.018657 3.605079 10)
 			(layer "F.SilkS")
 			(uuid "9a7d9b77-ee2b-40f0-ad79-e418f62059ff")
 			(effects
@@ -12144,12 +12183,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5457116"
+		(property "LCSC Part" ""
 			(at 0 0 10)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "49bf820f-2a94-4bc8-8e78-6af9d3e46cba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5457116"
+			(at 0 0 10)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26bfc12e-7d78-4d3c-bd71-8b939a8cf508")
 			(effects
 				(font
 					(size 1 1)
@@ -14996,7 +15048,7 @@
 		(descr ".105\" LONG RECEPTACLE; ACCEPTS .")
 		(tags "millmax 3305-0 keyboard")
 		(property "Reference" "J52"
-			(at -0.762 1.016 -10)
+			(at -1.143582 -2.078116 -10)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "2f95549e-2294-4e4e-b236-f93c2f0f3611")
@@ -16448,7 +16500,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 0 -1.143001 80)
+			(at -1.570169 0.062692 170)
 			(layer "F.SilkS")
 			(uuid "b540efba-0b43-4271-b2c3-01d809c28c9d")
 			(effects
@@ -16674,7 +16726,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C4"
-			(at 0 -1.16 100)
+			(at -0.255637 -1.100188 100)
 			(layer "F.SilkS")
 			(uuid "eaf701b5-bc02-4f99-841d-6bafedd2185a")
 			(effects
@@ -16971,7 +17023,7 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J58"
-			(at -3.935396 0.126792 100)
+			(at 1.405147 1.537912 100)
 			(layer "F.SilkS")
 			(uuid "5a4768e1-e51d-4004-a2f9-8c51083667c2")
 			(effects
@@ -17657,7 +17709,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 1.143001 100)
+			(at -0.009435 -1.056776 100)
 			(layer "F.SilkS")
 			(uuid "94f4efb8-bdf1-4b8e-85aa-85330405a2e6")
 			(effects
@@ -17881,7 +17933,7 @@
 		(uuid "6820e40f-4d81-4227-b211-f587abc7fffd")
 		(at 66.75 95 100)
 		(property "Reference" "E6"
-			(at 0 -4 100)
+			(at -0.260472 1.477212 -80)
 			(layer "F.SilkS")
 			(uuid "07a6d13c-5e78-4a62-94e1-fda10d0b037c")
 			(effects
@@ -17938,12 +17990,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22643"
+		(property "LCSC Part" ""
 			(at 0 0 100)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "42950c0b-ddee-4c25-88a3-3e0a170212cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22643"
+			(at 0 0 100)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c57a8ad-2f82-4a25-8dee-450db4d03aa1")
 			(effects
 				(font
 					(size 1 1)
@@ -23743,7 +23808,7 @@
 		(descr "Through hole straight socket strip, 1x07, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x07 2.54mm single row")
 		(property "Reference" "J55"
-			(at -4.826001 -2.285995 100)
+			(at 7.448281 -2.07865 -80)
 			(layer "F.SilkS")
 			(uuid "70e43cf7-e6f4-4774-9c2d-b7d3abe3b488")
 			(effects
@@ -25632,7 +25697,7 @@
 		(uuid "b4fbe0f1-9a35-4fc0-83d0-f5b33b4ac397")
 		(at 69.75 106.25 -80)
 		(property "Reference" "E5"
-			(at 0 -4 100)
+			(at 0.057682 -1.766826 100)
 			(layer "F.SilkS")
 			(uuid "3bfd534f-ba6c-4c48-85d4-6841151f22c6")
 			(effects
@@ -25689,12 +25754,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22643"
+		(property "LCSC Part" ""
 			(at 0 0 -80)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9b7c0ace-d06c-483e-9077-0d40e1b5f659")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22643"
+			(at 0 0 -80)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4bdab11-fb59-420e-b249-a3997dac9a3c")
 			(effects
 				(font
 					(size 1 1)
@@ -27212,7 +27290,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0 1.143001 80)
+			(at -1.323967 0.01928 170)
 			(layer "F.SilkS")
 			(uuid "d5068292-524e-47f5-9bd2-1e770809db92")
 			(effects
@@ -30458,7 +30536,7 @@
 		(uuid "d8b3bc94-90c8-4ac3-8ed5-c36509ce488a")
 		(at 244.5 103.5 -10)
 		(property "Reference" "E2"
-			(at 0 -4 170)
+			(at 0.057682 1.766826 170)
 			(layer "F.SilkS")
 			(uuid "da82d09a-d7f0-499b-b96e-0cc3ed91f654")
 			(effects
@@ -30515,12 +30593,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22643"
+		(property "LCSC Part" ""
 			(at 0 0 -10)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "16b19a47-c797-433b-9ade-a82722ac3964")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22643"
+			(at 0 0 -10)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0ab48fc-f16e-4dbf-818e-a90fcbd6f2d1")
 			(effects
 				(font
 					(size 1 1)
@@ -32949,7 +33040,7 @@
 			(uuid "f3062276-c54e-45e3-bbe7-8a344ceb09c5")
 		)
 		(fp_text user "XIAO nRF52840"
-			(at 0 0 80)
+			(at -0.965821 1.14136 80)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "bb1f1438-c994-4b8e-85a2-49ef21b73da3")
@@ -33612,12 +33703,25 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5457116"
+		(property "LCSC Part" ""
 			(at 0 0 -10)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a98022b2-4443-4286-bcb7-33c07a70cc28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5457116"
+			(at 0 0 -10)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89fa2536-3947-4575-84cf-e41f73e2b27b")
 			(effects
 				(font
 					(size 1 1)
@@ -34290,7 +34394,7 @@
 		(uuid "f167cdc3-f697-490b-a090-c4b7791d3977")
 		(at 69.960917 90.942799 -170)
 		(property "Reference" "SW30"
-			(at 0.572 -3.2362 10)
+			(at -0.449008 -3.437392 10)
 			(layer "F.SilkS")
 			(uuid "8351352f-5534-4105-8553-6a8fc20e5f38")
 			(effects
@@ -34883,7 +34987,7 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J57"
-			(at -3.929601 0.01913 80)
+			(at 1.565308 -1.269553 170)
 			(layer "F.SilkS")
 			(uuid "c8f70a5a-cd6c-46bf-9af3-8d08da754236")
 			(effects
@@ -35893,7 +35997,7 @@
 		(uuid "f95b682a-1fdd-4aac-a9da-c52fd2b6b742")
 		(at 248.960917 90.442799 170)
 		(property "Reference" "SW29"
-			(at -0.02487 -3.234304 170)
+			(at -0.656191 -3.496372 170)
 			(layer "F.SilkS")
 			(uuid "6d6f65e4-210b-413d-84ca-f175b64f9db6")
 			(effects
