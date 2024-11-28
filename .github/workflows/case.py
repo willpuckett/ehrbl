@@ -19,7 +19,7 @@ from build123d import *
 
 # set_port(3939)
 
-line_of_symmetry = 0
+line_of_symmetry = 163
 min_hole = 2
 ps_height = 1.4 * MM
 # pcb_thickness = 1.6 * MM
