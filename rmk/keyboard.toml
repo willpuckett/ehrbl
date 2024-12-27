@@ -1,0 +1,91 @@
+# Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
+[keyboard]
+name = "ehrbl"
+product_name = "ehrbl"
+vendor_id = 0x4c4b
+product_id = 0x4643
+manufacturer = "Octule"
+chip = "nrf52840"
+board = "XIAO BLE"
+
+[layout]
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+# row2col = true
+rows = 4
+cols = 8
+layers = 3
+keymap = [
+    [
+        ["B", "F", "D", "L", "P", "O", "U", "Y"],
+        ["C", "S", "T", "R", "N", "A", "I", "H"],
+        ["V", "W", "G", "M", "K", "Comma", "Dot", "Quote"],
+        ["__", "__", "LT(2, Backspace)", "LT(1, Space)", "E", "Enter", "__", "__"]
+    ],
+    [
+        ["KpEnter", "Kp7", "Kp8", "Kp9", "KbVolumeDown", "KbMute", "KbVolumeUp", "__"],
+        ["Kp0", "Kp4", "Kp5", "Kp6", "Left", "Down", "UP", "Right"],
+        ["KpDot", "Kp1", "Kp2", "Kp3", "Home", "PageDown", "PageUp", "End"],
+        ["__", "__", "__", "__", "__", "__", "__", "__"]
+    ],
+    [
+        ["F12", "F7", "F8", "F9", "__", "__", "__", "__"],
+        ["F11", "F4", "F5", "F6", "__", "__", "__", "__"],
+        ["F10", "F1", "F2", "F3", "__", "__", "__", "__"],
+        ["__", "__", "__", "__", "__", "__", "__", "__"]
+    ],
+]
+
+[light]
+
+[storage]
+clear_storage = true
+
+[ble]
+enabled = true
+
+[split]
+connection = "ble"
+
+[split.central]
+rows = 4
+cols = 4
+row_offset = 0
+col_offset = 0
+ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
+
+[split.central.matrix]
+matrix_type = "direct_pin"
+direct_pins = [
+    ["P0_28", "P0_03", "P0_02", "P1_10"], 
+    ["P0_04", "P1_14", "P0_29", "P1_15"],
+    ["P1_13", "P0_05", "P1_11", "P1_12"],
+    ["_", "_", "P0_09", "P0_10"]
+]
+# `direct_pin_low_active` is optional. Default is `true`.
+direct_pin_low_active = true
+
+
+[[split.peripheral]]
+rows = 4
+cols = 4
+row_offset = 0
+col_offset = 4
+ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
+
+[split.peripheral.matrix]
+matrix_type = "direct_pin"
+direct_pins = [
+    ["P1_10", "P1_15", "P0_29", "P1_14"], 
+    ["P0_04", "P1_13", "P0_05", "P1_12"],
+    ["P0_28", "P1_11", "P0_09", "P0_10"],
+    ["P0_02", "P0_03", "_", "_"],
+
+]
+# `direct_pin_low_active` is optional. Default is `true`.
+direct_pin_low_active = true
+
+[behavior]
+# Enable HRM 
+tap_hold = { enable_hrm = true, prior_idle_time = "150ms", hold_timeout = "280ms", post_wait_time = "25ms"}
+# # Disable HRM, you can safely ignore any fields if you don't want to change them
+# # tap_hold = { enable_hrm = false, hold_timeout = "200ms" }

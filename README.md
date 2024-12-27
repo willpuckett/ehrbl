@@ -76,9 +76,8 @@ typing—no bumpons necessary.
 
 Using a variant that should probably be referred to as _Befuddle_, scoring a
 whispy 636.1 "total word effort" on
-[cyanophage](https://cyanophage.github.io/playground.html?layout=bfdl%2F%3Bpouyjcstrx-naihqvwgm%5C%3Dk%2C.%27ze&mode=ergo&lan=english).
-The Y-punctuation cluster interaction is its greatest shortcoming, but it seems
-to be the least of all evils.
+[cyanophage](https://cyanophage.github.io/playground.html?layout=bfdl%2F%3Bpouyjcstrx-naihqvwgm%5C%3Dk%2C.%27ze&mode=ergo&lan=english), this maple is buttery indeed. The Y-punctuation cluster interaction is its greatest shortcoming, but it seems
+to be the least of all evils and becomes more natural after a week or so.
 
 ![cyanophage stats](.images/cyanophage.png)
 
