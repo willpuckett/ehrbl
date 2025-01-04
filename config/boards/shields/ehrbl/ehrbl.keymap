@@ -6,6 +6,7 @@
 
 #define NUM 1
 #define FUN 2
+#define USD 3
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -43,6 +44,14 @@
 			&kp F11  &kp F4  &kp F5  &kp F6    &trans  	&trans 	&trans 	&trans
 			&kp F10	 &kp F1  &kp F2  &kp F3    &trans  	&trans	&trans 	&trans
 							 &trans  &trans    &trans   &trans
+			>;
+		};
+		the_upside_down_layer {
+			bindings = <
+			&kp Y		 &kp U     		&kp O     	     &kp P       		&kp L     	 &kp D  	   &kp F  	   &kp B  	
+			&hr LCTRL H  &hr LALT I 	&hr LGUI A  	 &hrs LSHFT N       &hls RSHFT R &hl RGUI T    &hl RALT S  &hl RCTRL C
+			&rpi DQT SQT &rpi GT DOT 	&rpi LT COMMA    &kp K  			&kp M      	 &kp G  	   &kp W 	   &kp V		 		   		 	 
+										&kp RET  		 &kp E     			&mqt NUM SPACE &mqt FUN BSPC           
 			>;
 		};
 	};
