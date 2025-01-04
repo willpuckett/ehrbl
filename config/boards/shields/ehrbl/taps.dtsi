@@ -73,7 +73,7 @@
 			bindings = <&kp>, <&kp>;
 		};
 		
-		rpisl: require-prior-idle-sticky-layer {
+		rpislnw: require-prior-idle-sticky-layer-num-word {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "tap-preferred";
@@ -81,6 +81,16 @@
 			quick-tap-ms = <200>;	
 			require-prior-idle-ms = <HM_RPI>;
 			bindings = <&sl>, <&num_word>;
+		};
+		
+		rpislcw: require-prior-idle-sticky-layer-caps-word {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "tap-preferred";
+			tapping-term-ms = <175>;
+			quick-tap-ms = <200>;	
+			require-prior-idle-ms = <HM_RPI>;
+			bindings = <&sl>, <&caps_word>;
 		};
 
 		td: tap_dance_mod_tap {

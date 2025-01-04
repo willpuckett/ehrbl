@@ -5,7 +5,7 @@
 ![populated board prototype](.images/prototype_populated.png)
 
 After spending the day at my computer, I stepped out with friends Saturday night
-for a burger & beverage. On the patio of our local institution, the air was
+for a burger. On the patio of our local institution, the air was
 cool.
 
 > _Autumn had undeniably arrived._
@@ -81,7 +81,7 @@ to be the least of all evils and becomes more natural after a week or so.
 
 ![cyanophage stats](.images/cyanophage.png)
 
-Optimized for right handed CAD—Blender, KiCad, Shapr...
+Optimized for single handed CAD—Blender, KiCad, Shapr... Hold num/caps word to access the upside down sticky layer which reverses the keys. You'll have all the alphas on both hands and don't have to switch back and forth from mouse/trackpad so much.
 
 > [!NOTE]
 > The combo-forward layout obscures CAGS home row mods in the graphics.
@@ -93,9 +93,3 @@ Optimized for right handed CAD—Blender, KiCad, Shapr...
 For easy customization, connect to ZMK Studio in a
 [web-serial capable browser](https://zmk.studio) or with the
 [stand alone app](https://github.com/zmkfirmware/zmk-studio/releases/latest).
-
-> [!IMPORTANT]
-> Please drop a note to your local Seeed representative asking that they
-> breakout the PDM pins (pins 0.16, 1.0, and 1.10) to pads on the underside of
-> Xiao nRF52840. [[Seeed USA](mailto:seeed_us@seeed.cc)]
-> [[Seeed Europe](mailto:seeed_emea@seeed.cc)]

@@ -2,9 +2,9 @@
 #define RPI 175
 #define RPI_LONG 280
 
-ZMK_COMBO(num_word, &rpisl USD NUM, LM4 LM1, 0, 25, RPI_LONG)
+ZMK_COMBO(num_word, &rpislnw USD NUM, LM4 LM1, 0, 50, RPI_LONG)
 ZMK_COMBO(caps_lock, &kp CAPS, LM1 RM1, 0, 50, RPI)
-ZMK_COMBO(caps_word, &caps_word, RM1 RM4, 0, 50, RPI_LONG)
+ZMK_COMBO(caps_word, &rpislcw USD 0, RM1 RM4, 0, 50, RPI_LONG)
 
 ZMK_COMBO(grave, &mt TILDE GRAVE, LT4 LT3, 0, 25, RPI_LONG)
 ZMK_COMBO(esc, &kp ESC, LT3 LT2 LT1, 0 NUM, 25, RPI_LONG)
