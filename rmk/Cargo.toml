@@ -10,10 +10,10 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-# rmk = { version = "0.4.4", features = [
+rmk = { version = "0.5.1", features = [
 # rmk = { git = "https://github.com/HaoboGu/rmk",  features = [
 # rmk = { git = "https://github.com/HaoboGu/rmk", branch = "feat/hrm", features = [
-rmk = { git = "https://github.com/HaoboGu/rmk", rev = "refs/pull/200/head", features = [
+# rmk = { git = "https://github.com/HaoboGu/rmk", rev = "refs/pull/200/head", features = [
     "nrf52840_ble",
     "async_matrix",
     "split",

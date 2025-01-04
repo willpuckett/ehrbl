@@ -5,7 +5,6 @@ product_name = "ehrbl"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "Octule"
-chip = "nrf52840"
 board = "XIAO BLE"
 
 [layout]
@@ -17,7 +16,7 @@ layers = 3
 keymap = [
     [
         ["B", "F", "D", "L", "P", "O", "U", "Y"],
-        ["C", "S", "T", "R", "N", "A", "I", "H"],
+        ["MT(C, LCtrl)", "MT(S, LAlt)", "MT(T, LGui)", "MT(R, LShift)", "MT(N, RShift)", "MT(A, RGui)", "MT(I, RAlt)", "MT(H, RCtrl)"],
         ["V", "W", "G", "M", "K", "Comma", "Dot", "Quote"],
         ["__", "__", "LT(2, Backspace)", "LT(1, Space)", "E", "Enter", "__", "__"]
     ],

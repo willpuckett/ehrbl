@@ -1,3 +1,4 @@
+# Only for build123d; now using cargo-hex for uf2 generation
 dependencies:
   python@3.12
 env:
