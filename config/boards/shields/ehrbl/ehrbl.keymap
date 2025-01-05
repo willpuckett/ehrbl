@@ -19,6 +19,10 @@
 #include "combos.dtsi"
 #include "magic.dtsi"
 
+&num_word {
+  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL KP_MINUS KP_PLUS KP_DIVIDE KP_MULTIPLY KP_DOT>;  // do not continue on PLUS, MINUS, STAR, FSLH, EQUAL
+};
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -34,7 +38,7 @@
 			bindings = <
 			&kp KP_ENTER     &rpi AMPS KP_N7  &rpi STAR KP_N8  &rpi LPAR KP_N9  &kp C_VOL_DN		&kp C_MUTE 	  &kp C_VOL_UP    &none	
 			&rpi RPAR KP_N0  &rpi DLLR KP_N4  &rpi PRCNT KP_N5 &rpi CARET KP_N6 &hrs LSHFT C_PREV   &hr RGUI C_PP &hr RALT C_NEXT &kp RCTRL
-			&kp DOT          &rpi EXCL KP_N1  &rpi AT KP_N2    &rpi HASH KP_N3  &none  		        &none  		  &none  	 	  &none
+			&kp KP_DOT       &rpi EXCL KP_N1  &rpi AT KP_N2    &rpi HASH KP_N3  &none  		        &none  		  &none  	 	  &none
 											  &trans 	       &trans           &trans 			    &kp K_CANCEL
 			>;
 		};
