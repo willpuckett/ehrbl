@@ -2,7 +2,7 @@
 
 > a tiny board to celebrate the coming of 🍂 with minimal finger travel.
 
-![populated board prototype](.images/prototype_populated.png)
+![populated board prototype](.images/render_14_small.webp)
 
 After spending the day at my computer, I stepped out with friends Saturday night
 for a burger. On the patio of our local institution, the air was
