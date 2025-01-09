@@ -428,15 +428,15 @@
 		(remove_unused_layers no)
 		(uuid "cbc466f8-2413-47c5-8676-9b2e9e769e8c")
 	)
-	(model "${KIPRJMOD}/library/ehrbl.3dshapes/keycap_1x1.STEP"
+	(model "${KIPRJMOD}/library/ehrbl.3dshapes/KLP_Lame_Saddle.wrl"
 		(offset
-			(xyz 0 0 5.5)
+			(xyz 0 0 4.7)
 		)
 		(scale
-			(xyz 0.98 1 0.94)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz 0 0 0)
 		)
 	)
 	(model "${KIPRJMOD}/library/ehrbl.3dshapes/pg1350.step"

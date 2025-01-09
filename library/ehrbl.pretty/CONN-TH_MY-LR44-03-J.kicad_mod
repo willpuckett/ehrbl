@@ -275,4 +275,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "67a9327d-838c-46de-9990-39c78a0a2f22")
 	)
+	(model "${KIPRJMOD}/library/ehrbl.3dshapes/CONN-TH_MY-LR44-03-J.wrl"
+		(offset
+			(xyz 0 0 6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
