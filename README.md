@@ -49,6 +49,8 @@ Choose 28 keys, or 26 keys with encoders.
 > Use **3.7v LIR1254** (lithium ion rechargable) battery **only**, being sure to
 > not install it upside down.
 
+Also available [here](https://octule.com/listing/1842166746/ehrbl).
+
 ## Case
 
 [![Build123d Case](https://github.com/willpuckett/ehrbl/actions/workflows/case.yml/badge.svg)](https://github.com/willpuckett/ehrbl/actions/workflows/case.yml)
