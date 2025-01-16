@@ -30,32 +30,32 @@
 			bindings = <
 			&kp B		 &kp F     		&kp D     	     &kp L       		&kp P     	 &kp O  	   &kp U  	   &kp Y  	
 			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A    &hr RALT I  &hr RCTRL H
-			&kp V		 &kp W 			&kp G     		 &kp M      		&kp K  		 &rpi LT COMMA &rpi GT DOT &rpi DQT SQT
-										&mqt FUN BSPC    &mqt NUM SPACE     &kp E        &kp RET   
+			&kp V		 &kp W 			&kp G     		 &kp M      		&rpi LT COMMA &rpi GT DOT &rpi DQT SQT &kp K  		 
+										&mqt FUN BSPC    &mqtm NUM SPACE    &kp E        &kp RET   
 			>;
 		};
 		num_layer {
 			bindings = <
-			&kp KP_ENTER     &rpi AMPS KP_N7  &rpi STAR KP_N8  &rpi LPAR KP_N9  &kp C_VOL_DN		&kp C_MUTE 	  &kp C_VOL_UP    &none	
-			&rpi RPAR KP_N0  &rpi DLLR KP_N4  &rpi PRCNT KP_N5 &rpi CARET KP_N6 &hrs LSHFT C_PREV   &hr RGUI C_PP &hr RALT C_NEXT &kp RCTRL
-			&kp KP_DOT       &rpi EXCL KP_N1  &rpi AT KP_N2    &rpi HASH KP_N3  &none  		        &none  		  &none  	 	  &none
-											  &trans 	       &trans           &trans 			    &kp K_CANCEL
+			&kp KP_ENTER     &rpi AMPS KP_N7  &rpi STAR KP_N8  &rpi LPAR KP_N9  &trans  		&trans		  &trans 	   &trans
+			&rpi RPAR KP_N0  &rpi DLLR KP_N4  &rpi PRCNT KP_N5 &rpi CARET KP_N6 &hrs LSHFT LEFT &hr RGUI DOWN &hr RALT UP  &hr RCTRL RIGHT
+			&kp KP_DOT       &rpi EXCL KP_N1  &rpi AT KP_N2    &rpi HASH KP_N3  &kp HOME  		&kp PG_DN     &kp PG_UP    &kp END
+											  &trans 	       &trans           &kp K_CANCEL    &trans 			    
 			>;
 		};
 		fun_layer {
 			bindings = <
-			&kp F12  &kp F7	 &kp F8	 &kp F9    &trans 	&trans 	&trans 	&trans	
-			&kp F11  &kp F4  &kp F5  &kp F6    &trans  	&trans 	&trans 	&trans
-			&kp F10	 &kp F1  &kp F2  &kp F3    &trans  	&trans	&trans 	&trans
-							 &trans  &trans    &trans   &trans
+			&kp F12  &kp F7	 &kp F8	 &kp F9    &kp C_VOL_DN		&kp C_MUTE 	  &kp C_VOL_UP    &none		
+			&kp F11  &kp F4  &kp F5  &kp F6    &kp C_PREV   	&kp C_PP 	  &kp C_NEXT 	  &none
+			&kp F10	 &kp F1  &kp F2  &kp F3    &trans  			&trans		  &trans 		  &trans
+							 &trans  &trans    &trans   		&trans
 			>;
 		};
 		the_upside_down_layer {
 			bindings = <
 			&kp Y		 &kp U     		&kp O     	     &kp P       		&kp L     	 &kp D  	   &kp F  	   &kp B  	
-			&hr LCTRL H  &hr LALT I 	&hr LGUI A  	 &hrs LSHFT N       &hls RSHFT R &hl RGUI T    &hl RALT S  &hl RCTRL C
-			&rpi DQT SQT &rpi GT DOT 	&rpi LT COMMA    &kp K  			&kp M      	 &kp G  	   &kp W 	   &kp V		 		   		 	 
-										&kp RET  		 &kp E     			&mqt NUM SPACE &mqt FUN BSPC           
+			&hs LCTRL H  &hs LALT I 	&hs LGUI A  	 &hs LSHFT N        &hs RSHFT R  &hs RGUI T    &hs RALT S  &hs RCTRL C
+			&kp K  	     &rpi DQT SQT   &rpi GT DOT 	 &rpi LT COMMA      &kp M      	 &kp G  	   &kp W 	   &kp V		 		   		 	 
+										&kp RET  		 &kp E     			&mqtm NUM SPACE &mqt FUN BSPC           
 			>;
 		};
 	};

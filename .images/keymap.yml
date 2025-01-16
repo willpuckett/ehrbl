@@ -135,6 +135,10 @@ parse_config:
       type: text_with_symbol
     
   zmk_combos:
+    combo_usd_l:
+      draw_separate: true
+    combo_usd_r:
+      draw_separate: true
     combo_esc:
       draw_separate: true
     combo_num_word:

@@ -9,6 +9,16 @@
 / {
 	behaviors {
 		
+		hs: home_row_sticky {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "balanced";
+			tapping-term-ms = <HM_TAPPING_TERM>;
+			require-prior-idle-ms = <HM_RPI>;
+			hold-trigger-on-release;
+			bindings = <&sk>, <&kp>;
+		};
+
 		hl: home_row_mod_left {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
@@ -62,6 +72,16 @@
 			require-prior-idle-ms = <HM_RPI>;
 			bindings = <&mo>, <&kp>;
 		};
+
+		mqtm: momentary-quick-tap-magic {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "tap-preferred";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <125>;
+			require-prior-idle-ms = <HM_RPI>;
+			bindings = <&mo>, <&mgs>;
+		};
 		
 		rpi: require-prior-idle {
 			compatible = "zmk,behavior-hold-tap";
@@ -73,25 +93,16 @@
 			bindings = <&kp>, <&kp>;
 		};
 		
-		rpislnw: require-prior-idle-sticky-layer-num-word {
+		usd: up-side-down {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "tap-preferred";
 			tapping-term-ms = <175>;
 			quick-tap-ms = <200>;	
 			require-prior-idle-ms = <HM_RPI>;
-			bindings = <&sl>, <&num_word>;
+			bindings = <&tog>, <&sl>;
 		};
-		
-		rpislcw: require-prior-idle-sticky-layer-caps-word {
-			compatible = "zmk,behavior-hold-tap";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping-term-ms = <175>;
-			quick-tap-ms = <200>;	
-			require-prior-idle-ms = <HM_RPI>;
-			bindings = <&sl>, <&caps_word>;
-		};
+	
 
 		td: tap_dance_mod_tap {
 			compatible = "zmk,behavior-tap-dance";
