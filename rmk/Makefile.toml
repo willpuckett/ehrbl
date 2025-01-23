@@ -40,7 +40,7 @@ args = [
     "ihex",
     "ehrbl-peripheral.hex",
 ]
-dependencies = ["install-llvm-tools"]
+dependencies = ["install-llvm-tools", "flip-link"]
 
 [tasks.uf2-central]
 install_crate = { crate_name = "cargo-hex-to-uf2", binary = "cargo", test_arg = [
