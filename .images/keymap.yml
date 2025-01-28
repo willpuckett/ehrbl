@@ -81,6 +81,7 @@ parse_config:
     type: trans
   
   raw_binding_map: 
+    '&mgs SPACE': $$mdi:keyboard-space$$
     '&sys_reset': $$mdi:backup-restore$$
     '&bootloader': $$mdi:progress-download$$
     '&studio_unlock': $$mdi:lock-open-outline$$
@@ -139,7 +140,13 @@ parse_config:
       draw_separate: true
     combo_usd_r:
       draw_separate: true
-    combo_esc:
+    combo_usd_lt:
+      draw_separate: true
+    combo_usd_rt:
+      draw_separate: true
+    combo_esc_l:
+      draw_separate: true
+    combo_esc_r:
       draw_separate: true
     combo_num_word:
       draw_separate: true
@@ -186,7 +193,7 @@ parse_config:
     LALT: ALT
     
     SPACE: $$mdi:keyboard-space$$
-    # ESC: $$mdi:keyboard-esc$$
+    ESC: $$mdi:keyboard-esc$$
 
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$
@@ -203,6 +210,12 @@ parse_config:
     RCTRL: $$mdi:apple-keyboard-control$$
     RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
     
+    LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    
+    RALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    
     LSHFT: $$mdi:apple-keyboard-shift$$
     LSHIFT: $$mdi:apple-keyboard-shift$$
     LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
@@ -211,8 +224,8 @@ parse_config:
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
 
-    LGUI: $$mdi:microsoft-windows$$
-    RGUI: $$mdi:microsoft-windows$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
     
     TAB: $$mdi:keyboard-tab$$
 
@@ -331,6 +344,7 @@ parse_config:
     LT: <
     PERIOD: .
     DOT: .
+    KP_DOT: .
     GREATER_THAN: '>'
     GT: '>'
     LEFT_BRACKET: '['

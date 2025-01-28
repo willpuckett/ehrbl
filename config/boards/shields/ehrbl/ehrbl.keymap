@@ -35,11 +35,11 @@
 			>;
 		};
 		num_layer {
-			bindings = <
-			&kp KP_ENTER     &rpi AMPS KP_N7  &rpi STAR KP_N8  &rpi LPAR KP_N9  &trans  		&trans		  &trans 	   &trans
-			&rpi RPAR KP_N0  &rpi DLLR KP_N4  &rpi PRCNT KP_N5 &rpi CARET KP_N6 &hrs LSHFT LEFT &hr RGUI DOWN &hr RALT UP  &hr RCTRL RIGHT
-			&kp KP_DOT       &rpi EXCL KP_N1  &rpi AT KP_N2    &rpi HASH KP_N3  &kp HOME  		&kp PG_DN     &kp PG_UP    &kp END
-											  &trans 	       &trans           &kp K_CANCEL    &trans 			    
+			bindings = < 
+			&kp KP_ENTER    &kp KP_N7      &kp KP_N8      &kp KP_N9          &trans  		 &trans		   &trans 	    &trans
+			&hl LCTRL KP_N0 &hl LALT KP_N4 &hl LGUI KP_N5 &hls LSHFT KP_N6   &hrs LSHFT LEFT &hr RGUI DOWN &hr RALT UP  &hr RCTRL RIGHT
+			&kp KP_DOT      &kp KP_N1      &kp KP_N2      &kp KP_N3          &kp HOME  		 &kp PG_DN     &kp PG_UP    &kp END
+										   &trans 	      &trans             &kp K_CANCEL    &trans 			    
 			>;
 		};
 		fun_layer {
