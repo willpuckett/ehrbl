@@ -20,7 +20,7 @@
 #include "magic.dtsi"
 
 &num_word {
-  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL KP_MINUS KP_PLUS KP_DIVIDE KP_MULTIPLY KP_DOT>;  // do not continue on PLUS, MINUS, STAR, FSLH, EQUAL
+  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL KP_MINUS KP_PLUS KP_DIVIDE KP_MULTIPLY KP_DOT>; 
 };
 
 / {
@@ -30,7 +30,7 @@
 			bindings = <
 			&kp B		 &kp F     		&kp D     	     &kp L       		&kp P     	 &kp O  	   &kp U  	   &kp Y  	
 			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A    &hr RALT I  &hr RCTRL H
-			&kp V		 &kp W 			&kp G     		 &kp M      		&rpi LT COMMA &rpi GT DOT &rpi DQT SQT &kp K  		 
+			&kp V		 &kp W 			&kp G     		 &kp M      		&rpi GT DOT  &rpi LT COMMA &rpi DQT SQT &kp K  		 
 										&mqt FUN BSPC    &mqtm NUM SPACE    &kp E        &kp RET   
 			>;
 		};
@@ -54,7 +54,7 @@
 			bindings = <
 			&kp Y		 &kp U     		&kp O     	     &kp P       		&kp L     	 &kp D  	   &kp F  	   &kp B  	
 			&hs LCTRL H  &hs LALT I 	&hs LGUI A  	 &hs LSHFT N        &hs RSHFT R  &hs RGUI T    &hs RALT S  &hs RCTRL C
-			&kp K  	     &rpi DQT SQT   &rpi GT DOT 	 &rpi LT COMMA      &kp M      	 &kp G  	   &kp W 	   &kp V		 		   		 	 
+			&kp K  	     &rpi DQT SQT   &rpi LT COMMA    &rpi GT DOT        &kp M      	 &kp G  	   &kp W 	   &kp V		 		   		 	 
 										&kp RET  		 &kp E     			&mqtm NUM SPACE &mqt FUN BSPC           
 			>;
 		};
