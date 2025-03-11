@@ -36,6 +36,7 @@ ZMK_COMBO(q, &kp Q, LB3 LB4, 0, 50)
 ZMK_COMBO(j, &kp J, LB2 LB3, 0, 50)
 ZMK_COMBO(x, &kp X, LT2 LT3, 0, 50)
 ZMK_COMBO(z, &kp Z, LB1 LB4, 0, 50)
+ZMK_COMBO(k, &kp K, RT3 RT4, 0, 50)
 
 // Numbers
 ZMK_COMBO(1, &mt N1 EXCL, LM4 LT4, 0, 50, RPI_SHORT)

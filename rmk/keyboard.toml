@@ -87,4 +87,4 @@ direct_pin_low_active = true
 # Enable HRM 
 tap_hold = { enable_hrm = true, prior_idle_time = "150ms", hold_timeout = "280ms", post_wait_time = "25ms"}
 # # Disable HRM, you can safely ignore any fields if you don't want to change them
-# # tap_hold = { enable_hrm = false, hold_timeout = "200ms" }
+# # tap_hold = { enable_hrm = false, hold_timeout = "200ms" }               

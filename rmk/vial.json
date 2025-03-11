@@ -70,12 +70,6 @@
         }
     ],
     "layouts": {
-        "labels": [
-            [
-                "label",
-                "label2"
-            ]
-        ],
         "keymap": [
             [
                 "0,0",
