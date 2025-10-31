@@ -5,8 +5,12 @@ on:
   push:
     tags:
       - "v*.*.*"
+    paths:
+      - ".images/kd_config.yml"
+      - ".github/workflows/keymap.yml"
+      - "rmk/keyboard.toml"
   workflow_run:
-    workflows: ["ZMK"]
+    workflows: ["Build RMK firmware"]
     types:
       - completed
   workflow_dispatch:
@@ -20,13 +24,17 @@ jobs:
         with:
           fetch-depth: 2
           ref: ${{ github.head_ref }}
+      - uses: astral-sh/setup-uv@v3
       - run: |
-          python3 -m pipx install keymap-drawer
-          .github/workflows/keymap.sh
+          uvx --from git+https://github.com/willpuckett/keymap-drawer keymap \
+              --config .images/kd_config.yml parse -r rmk/keyboard.toml \
+              > .images/keymap.yml
+          uvx --from git+https://github.com/willpuckett/keymap-drawer keymap \
+              draw --dts-layout .github/workflows/ehrbl-layouts.dtsi .images/keymap.yml > .images/keymap_caster.svg
       - uses: actions/upload-artifact@v4
         with:
           name: keymaps
-          path: ".images/keymap_*.svg"
+          path: ".images/keymap_caster.svg"
           include-hidden-files: true
 
   push-or-release:
@@ -54,7 +62,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         with:
-          file_pattern: ".images/*.svg"
+          file_pattern: ".images/keymap_caster.svg"
           # So the previous commit is amended instead of creating a new one when desired
           # See:
           # - https://github.com/stefanzweifel/git-auto-commit-action#using---amend-and---no-edit-as-commit-options
@@ -69,4 +77,4 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
         with:
-          files: ".images/keymap_*.svg"
+          files: ".images/keymap_caster.svg"

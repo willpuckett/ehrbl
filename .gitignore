@@ -1,0 +1,11 @@
+target
+
+*.bin
+*.elf
+*.hex
+*.uf2
+
+!*softdevice.hex
+
+__pycache__
+

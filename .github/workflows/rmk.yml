@@ -1,0 +1,51 @@
+name: Build RMK firmware
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "rmk/**"
+      - ".github/workflows/rmk.yml"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cargo-bins/cargo-binstall@main
+      - uses: actions/checkout@v5
+      - name: Cache cargo registry and build
+        uses: actions/cache@v4
+        id: cargo-cache
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+            rmk/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('rmk/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-${{ hashFiles('rmk/Cargo.lock') }}
+      - name: Install flip-link, cargo-make, and cargo-binutils
+        if: steps.cargo-cache.outputs.cache-hit != 'true'
+        run: cargo binstall cargo-make cargo-hex-to-uf2 flip-link cargo-binutils -y
+      - name: Add target
+        run: rustup target add thumbv7em-none-eabihf
+      - name: Build uf2 firmware
+        working-directory: ./rmk
+        run: cargo make uf2 --release
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: rmk/*.uf2
+
+  release:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    permissions:
+      contents: write
+    needs: build
+    steps:
+      - uses: actions/download-artifact@v5
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "*.uf2"
