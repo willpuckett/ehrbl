@@ -59,7 +59,7 @@ Also available [here](https://octule.com/listing/1842166746/ehrbl).
 
 ![case](.images/case.png)
 
-It's really more of a skin. Print and place the pcb directly in it. The case is
+It's really more of a skin. It is designed to sit as low as possible.Print and place the pcb directly in it. The case is
 only one half, flip it in your slicer for the other half 🙃
 
 > [!TIP]
@@ -71,10 +71,10 @@ typing—no bumpons necessary.
 
 ## Caster
 
-[![ZMK Build](https://github.com/willpuckett/ehrbl/actions/workflows/zmk.yml/badge.svg)](https://github.com/willpuckett/ehrbl/actions/workflows/zmk.yml)
+[![RMK Build](https://github.com/willpuckett/ehrbl/actions/workflows/rmk.yml/badge.svg)](https://github.com/willpuckett/ehrbl/actions/workflows/rmk.yml)
 [![keymap drawer](https://github.com/willpuckett/ehrbl/actions/workflows/keymap.yml/badge.svg)](https://github.com/willpuckett/ehrbl/actions/workflows/keymap.yml)
 
-### Download the latest firmware [[left](https://github.com/willpuckett/ehrbl/releases/latest/download/caster_left.uf2)] [[right](https://github.com/willpuckett/ehrbl/releases/latest/download/caster_right.uf2)]
+### Download the latest firmware [[left](https://github.com/willpuckett/ehrbl/releases/latest/download/ehrbl-central.uf2)] [[right](https://github.com/willpuckett/ehrbl/releases/latest/download/ehrbl-peripheral.uf2)]
 
 Using a variant that should probably be referred to as _Befuddle_, scoring a
 whispy 636.1 "total word effort" on
@@ -90,8 +90,3 @@ Optimized for single handed CAD—Blender, KiCad, Shapr... Hold num/caps word to
 
 ![Caster](.images/keymap_caster.svg)
 
-### ZMK Studio
-
-For easy customization, connect to ZMK Studio in a
-[web-serial capable browser](https://zmk.studio) or with the
-[stand alone app](https://github.com/zmkfirmware/zmk-studio/releases/latest).
