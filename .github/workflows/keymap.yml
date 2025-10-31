@@ -6,9 +6,9 @@ on:
     tags:
       - "v*.*.*"
     paths:
-      - ".images/kd_config.yml"
+      - ".images/config.yml"
+      - ".images/info.json"
       - ".github/workflows/keymap.yml"
-      - "rmk/keyboard.toml"
   workflow_run:
     workflows: ["Build RMK firmware"]
     types:
@@ -27,10 +27,9 @@ jobs:
       - uses: astral-sh/setup-uv@v3
       - run: |
           uvx --from git+https://github.com/willpuckett/keymap-drawer keymap \
-              --config .images/kd_config.yml parse -r rmk/keyboard.toml \
-              > .images/keymap.yml
+              -c .images/config.yml parse -r rmk/keyboard.toml | \
           uvx --from git+https://github.com/willpuckett/keymap-drawer keymap \
-              draw --dts-layout .github/workflows/ehrbl-layouts.dtsi .images/keymap.yml > .images/keymap_caster.svg
+              draw -j .images/info.json - > .images/keymap_caster.svg
       - uses: actions/upload-artifact@v4
         with:
           name: keymaps
